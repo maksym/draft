@@ -13,8 +13,8 @@ RUN echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true 
 
 RUN apt-get install -y oracle-java7-installer
 
-RUN wget -O ~/bin/lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
-RUN chmod a+x ~/bin/lein
+RUN wget -O /bin/lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+RUN chmod a+x /bin/lein
 RUN lein
 
 RUN lein new app draft
